@@ -1,4 +1,4 @@
-# GreenHarvest — student website project
+# Smacon Agric Club — student website project
 
 A beginner-friendly, responsive four-page website made with HTML, CSS, Bootstrap 5 and a small amount of JavaScript.
 
