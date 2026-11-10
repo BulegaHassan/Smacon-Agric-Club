@@ -1,0 +1,769 @@
+/* GreenHarvest student project: shared styles for all pages */
+:root {
+  --farm-green: #176b45;
+  --farm-dark: #103d2b;
+  --farm-blue: #176a8a;
+  --farm-light: #f2f8f4;
+  --farm-lime: #d7ed9c;
+}
+body { color: #20352b; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+.site-navbar { background: var(--farm-dark); }
+.navbar-brand { letter-spacing: .2px; }
+.brand-leaf { color: var(--farm-lime); margin-right: .35rem; }
+.navbar .nav-link { color: rgba(255,255,255,.78); padding-left: .85rem !important; padding-right: .85rem !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: #fff; }
+.logo {width: 5%;}
+.hero-section { color: #fff; background: linear-gradient(120deg, #103d2b, #176b45 70%, #176a8a); }
+.hero-title { max-width: 620px; line-height: 1.08; letter-spacing: -1.3px; }
+.eyebrow { color: var(--farm-green); font-size: .76rem; font-weight: 800; letter-spacing: 1.7px; margin-bottom: .65rem; }
+.hero-section .eyebrow { color: var(--farm-lime); }
+.hero-note { color: rgba(255,255,255,.7); }
+.hero-image { width: 100%; min-height: 280px; max-height: 440px; object-fit: cover; border-radius: 1.5rem; box-shadow: 0 22px 50px rgba(0,0,0,.22); }
+.btn-farm { background: var(--farm-lime); border-color: var(--farm-lime); color: #173b29; font-weight: 700; }
+.btn-farm:hover { background: #c5e57c; border-color: #c5e57c; color: #103d2b; }
+.section-heading { max-width: 650px; }
+.product-card { border: 1px solid #e3ece5; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 18px rgba(21,64,42,.05); transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(21,64,42,.12); }
+.product-card .card-img-top { height: 220px; object-fit: cover; }
+.product-card .card-body { padding: 1.25rem; }
+.product-card a { text-decoration: none; }
+.impact-band { background: var(--farm-green); }
+.page-banner { background: var(--farm-light); border-bottom: 1px solid #e0ece3; }
+.page-banner .container { max-width: 1140px; }
+.team-feature { max-height: 420px; object-fit: cover; }
+.role-card { border: 1px solid #e1ece4; border-radius: 1rem; padding: 1.4rem; background: #fff; }
+.role-icon { font-size: 2rem; margin-bottom: .8rem; }
+.project-note { background: var(--farm-light); border: 1px solid #dfebe2; }
+.placeholder-visual { height: 220px; background: linear-gradient(135deg, #d9efda, #d6eaf5); }
+.contact-detail { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 0; border-bottom: 1px solid #e6eee8; }
+.contact-symbol { font-size: 1.4rem; }
+.contact-panel { border: 1px solid #e0ebe3; border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(21,64,42,.06); }
+.form-control, .form-select { padding: .75rem .85rem; border-color: #d4e2d8; }
+.form-control:focus, .form-select:focus { border-color: #58a47b; box-shadow: 0 0 0 .2rem rgba(23,107,69,.12); }
+.site-footer { color: rgba(255,255,255,.85); background: #0b2d20; }
+.site-footer a { color: #d7ed9c; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+
+/* GreenHarvest team section */
+
+.team-section {
+    background: linear-gradient(180deg, #f3faf5 0%, #ffffff 100%);
+}
+
+.team-subtitle {
+    color: #249653;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.team-heading {
+    color: #173f2d;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+}
+
+.team-heading span {
+    color: #299b59;
+}
+
+.team-intro {
+    max-width: 650px;
+    color: #68796e;
+    line-height: 1.8;
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    padding: 22px 12px;
+    border: 1px solid #e5eee7;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(24, 75, 45, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #269a55, #229db0);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(24, 75, 45, 0.14);
+}
+
+.team-image-wrapper {
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    margin: 5px auto 22px;
+    border: 2px solid #36a765;
+    border-radius: 50%;
+    background: #edf8f0;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image-wrapper {
+    transform: scale(1.05);
+}
+
+.team-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-name {
+    margin-bottom: 7px;
+    color: #173f2d;
+    font-size: 1.25rem;
+    font-weight: 750;
+}
+
+.team-role {
+    color: #249653;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.team-description {
+    min-height: 75px;
+    margin: 14px auto 20px;
+    color: #718076;
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #edf1ed;
+}
+
+.team-socials a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #258b4d;
+    background: #edf7ef;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.team-socials a:hover {
+    color: #ffffff;
+    background: #258b4d;
+    transform: translateY(-4px);
+}
+.contact-map-card {
+    height: 100%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #e1eee4;
+    box-shadow: 0 8px 25px rgba(20, 70, 40, 0.08);
+}
+
+.contact-map-card h3 {
+    color: #17452e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-map-card h3 i {
+    color: #269653;
+    margin-right: 8px;
+}
+
+.contact-map-card p {
+    color: #718076;
+    margin-bottom: 20px;
+}
+
+.contact-map {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.map-directions {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #238b4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.map-directions:hover {
+    background: #176b39;
+    color: white;
+}
+
+/* Footer social media icons */
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.footer-socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: #ffffff;
+    color: #238b4d;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* GreenHarvest subscription section */
+
+.subscribe-section {
+    padding: 65px 0;
+    background: #f1f8f3;
+}
+
+.subscribe-box {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    padding: 55px 35px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #124c32, #177c68);
+    color: white;
+    box-shadow: 0 15px 40px rgba(18, 76, 50, 0.15);
+}
+
+.subscribe-box::before,
+.subscribe-box::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.subscribe-box::before {
+    top: -100px;
+    left: -70px;
+}
+
+.subscribe-box::after {
+    right: -70px;
+    bottom: -120px;
+}
+
+.subscribe-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #b9f2c9;
+    font-size: 28px;
+}
+
+.subscribe-label {
+    color: #b9f2c9;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.subscribe-box h2 {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #ffffff;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.subscribe-box h2 span {
+    color: #a9e8bb;
+}
+
+.subscribe-description {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    color: #e0f0e6;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.subscribe-input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 12px;
+    min-width: 0;
+    padding: 0 17px;
+    background: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: #648071;
+}
+
+.subscribe-input:focus-within {
+    border-color: #91d7a6;
+}
+
+.subscribe-input i {
+    color: #279653;
+}
+
+.subscribe-input input {
+    width: 100%;
+    min-width: 0;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #183e2b;
+    font-size: 14px;
+}
+
+.subscribe-input input::placeholder {
+    color: #87958c;
+}
+
+.subscribe-form button {
+    padding: 0 22px;
+    border: none;
+    border-radius: 12px;
+    background: #a9e8bb;
+    color: #124c32;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-form button i {
+    margin-left: 7px;
+}
+
+.subscribe-form button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+.subscribe-note {
+    margin: 20px 0 0;
+    color: #d4e9dc;
+    font-size: 12px;
+}
+
+.subscribe-note i {
+    margin-right: 5px;
+    color: #a9e8bb;
+}
+
+.subscribe-message {
+    margin: 12px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+    width: 100%;
+    padding: 85px 0;
+    background: #f4f9f6;
+}
+
+/* Heading */
+.testimonials-heading {
+    max-width: 720px;
+    margin: 0 auto 50px;
+}
+
+.testimonials-tag {
+    display: inline-block;
+    background: #e0f2e8;
+    color: #177c50;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.testimonials-heading h2 {
+    color: #173d2d;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.testimonials-heading h2 span {
+    color: #219653;
+}
+
+.testimonials-heading p {
+    color: #6b7c72;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    height: 100%;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e4eee7;
+    box-shadow: 0 8px 25px rgba(20, 70, 45, 0.06);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(20, 70, 45, 0.12);
+    border-color: #a8d8b8;
+}
+
+.quote-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5f5eb;
+    color: #219653;
+    font-size: 21px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.testimonial-stars {
+    color: #f3b72e;
+    font-size: 13px;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-text {
+    color: #586b60;
+    font-size: 15px;
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+/* Person Details */
+.testimonial-person {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #edf1ee;
+}
+
+.person-avatar {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #177c50, #279d79);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.testimonial-person h5 {
+    color: #173d2d;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.testimonial-person span {
+    color: #819087;
+    font-size: 13px;
+}
+
+/* Bottom Message */
+.testimonials-bottom {
+    margin-top: 55px;
+    padding: 28px 20px;
+    background: #e5f3e9;
+    border-radius: 14px;
+}
+
+.testimonials-bottom h4 {
+    color: #17633e;
+    font-weight: 800;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.testimonials-bottom p {
+    color: #60766a;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.product-actions .btn {
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+.whatsapp-link {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    font-size: 19px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background: #128C7E;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 28px;
+    }
+
+    .testimonial-card {
+        padding: 24px;
+    }
+
+    .testimonials-bottom {
+        margin-top: 35px;
+    }
+}
+
+.agric-collage {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 12px;
+    height: 420px;
+    width: 100%;
+}
+
+.collage-large {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.collage-small {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+    min-height: 0;
+}
+
+.collage-small img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.collage-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.collage-large img:hover,
+.collage-small img:hover {
+    transform: scale(1.04);
+}
+
+.team-mini-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    padding: 8px 14px 8px 8px;
+    background: #f0f8f2;
+    border: 1px solid #dceee1;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.team-mini-link:hover {
+    background: #e0f2e6;
+    transform: translateY(-3px);
+}
+
+.team-mini-avatars {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.team-mini-avatars img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin-left: -9px;
+    transition: transform 0.3s ease;
+}
+
+.team-mini-avatars img:first-child {
+    margin-left: 0;
+}
+
+.team-mini-link:hover .team-mini-avatars img {
+    transform: translateX(2px);
+}
+
+.team-mini-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #176b43;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.team-mini-text i {
+    font-size: 12px;
+}
+
+
+@media (max-width: 576px) {
+    .agric-collage {
+        height: 320px;
+        gap: 8px;
+    }
+
+    .collage-small {
+        gap: 8px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .subscribe-section {
+        padding: 40px 12px;
+    }
+
+    .subscribe-box {
+        padding: 40px 20px;
+        border-radius: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-input {
+        flex: auto;
+    }
+
+    .subscribe-form button {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .team-heading {
+        font-size: 2rem;
+    }
+
+    .team-card {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title { font-size: 2.55rem; }
+  .hero-image { min-height: 220px; }
+  .product-card .card-img-top { height: 200px; }
+}
